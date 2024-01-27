@@ -24,7 +24,7 @@ const trackComponentsUsage = async () => {
 	const usageFile: CustomUri = {
 		...file,
 		usage: fileUsage,
-	}
+	};
     usageFiles.push(usageFile);
   }
 
@@ -46,7 +46,7 @@ if (a.path < b.path) {
     treeDataProvider: treeDataProvider,
     showCollapseAll: true
   });
-}
+};
 
 const calculateUsage = async (componentToCheck: vscode.Uri) => {
   const files = await vscode.workspace.findFiles('**/*.{tsx, jsx}', '**/node_modules/**', 1000);
@@ -64,7 +64,7 @@ const calculateUsage = async (componentToCheck: vscode.Uri) => {
     }
   }
   return usage.reduce((accumulator, current) => accumulator + current, 0);
-}
+};
 
 const getTreeDataProvider = (usageFiles: CustomUri[]) => {
   return {
@@ -92,7 +92,7 @@ const getTreeDataProvider = (usageFiles: CustomUri[]) => {
   
 	  return treeItem;
   }
-    }
+    };
   };
 
 

@@ -1,8 +1,8 @@
 # Component Tracker
 
-Component Tracker is a Visual Studio Code extension designed to track and display the usage of `.tsx` components in your project. 
+Component Tracker is a Visual Studio Code extension designed to track and display the usage of React components in your project. 
 
-With this extension, you can quickly get an overview of all `.tsx` and `.jsx` functional React components in your workspace, how much each component is being used, which ones are being used and which ones are not. This can provide valuable insights and help you maintain your codebase more effectively.
+With this extension, you can quickly get an overview of the usage of all functional React components in your workspace, how much each component is being used, which ones are being used and which ones are not. This can provide valuable insights and help you maintain your codebase more effectively.
 
 ## Features
 
