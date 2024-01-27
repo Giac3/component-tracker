@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 const trackComponentsUsage = async () => {
-  const files = await vscode.workspace.findFiles('**/*.tsx', '**/{node_modules,dist}/**', 1000);
+  const files = await vscode.workspace.findFiles('**/*.{tsx, jsx}', '**/node_modules/**', 1000);
 
   const usageFiles: Array<CustomUri> = [];
   for (const file of files) {
@@ -39,7 +39,7 @@ if (a.path < b.path) {
   }
   );
 
-  // Register your TreeDataProvider every time you have new data
+  // Register the TreeDataProvider every time we have new data
   const treeDataProvider = getTreeDataProvider(usageFiles);
   vscode.window.registerTreeDataProvider('component-tracker', treeDataProvider);
   vscode.window.createTreeView('component-tracker', {
@@ -49,7 +49,7 @@ if (a.path < b.path) {
 }
 
 const calculateUsage = async (componentToCheck: vscode.Uri) => {
-  const files = await vscode.workspace.findFiles('**/*.tsx', '**/{node_modules,dist}/**', 1000);
+  const files = await vscode.workspace.findFiles('**/*.{tsx, jsx}', '**/node_modules/**', 1000);
   const usage: number[] = [];
   for (const file of files) {
     if (file.path !== componentToCheck.path) {

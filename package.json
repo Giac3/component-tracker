@@ -2,13 +2,18 @@
   "name": "component-tracker",
   "displayName": "Component Tracker",
   "description": "Track your components usage across your react project",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "publisher": "Giac3",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giac3/component-tracker"},
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
@@ -20,12 +25,7 @@
         }
       ]
     },
-    "commands": [
-      {
-        "command": "component-tracker.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": [  ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

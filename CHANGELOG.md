@@ -18,3 +18,19 @@ All noticeable changes for the "component-tracker" project are detailed in this 
 
 **Notes**
 - The extension securely runs in the workspace, there are no known security vulnerabilities in this version.
+
+## [0.0.2] - 2024-01-27
+
+**Added**
+- Update icon
+
+
+## [0.0.3] - 2024-01-27
+
+**Changed**
+- Remove default commands
+
+## [0.0.4] - 2024-01-27
+
+**Added**
+- Add support for jsx components
