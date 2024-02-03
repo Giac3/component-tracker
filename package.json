@@ -2,7 +2,7 @@
   "name": "component-tracker",
   "displayName": "Component Tracker",
   "description": "Track your components usage across your react project",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "publisher": "Giac3",
   "icon": "images/icon.png",
   "engines": {
